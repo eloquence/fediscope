@@ -110,6 +110,8 @@ function lookup() {
         .catch(error => {
             document.getElementById("loading").style.display = "none";
             document.getElementById("error").style.display = "inline";
+            document.getElementById("profession-select").removeAttribute("disabled");
+            document.getElementById("lookup-button").removeAttribute("disabled");
             console.error(error);
         });
 }
