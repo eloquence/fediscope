@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FediScope: Find fediverse accounts by profession</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <span id="intro">
+        <strong>FediScope</strong> lets you find fediverse accounts for people in a field using <a href="https://www.wikidata.org/" target="_blank">Wikidata</a>. You can then compile a custom CSV and import it into Mastodon. It was made by <a href="https://social.coop/@eloquence" target="_blank">@eloquence@social.coop</a> ( <a href="https://github.com/eloquence/fediscope" target="_blank">code</a> | <a href="javaScript:toggleDarkMode()">toggle dark mode</a>). </span>
+      <p>
+        <b>Privacy:</b> This tool directly interacts with Wikidata from your browser and does not log your queries. Wikidata creates records for people the community considers <a href="https://www.wikidata.org/wiki/Wikidata:Notability" target="_blank">notable</a>. If they made an entry for you and you don't want them to, you can <a href="https://www.wikidata.org/wiki/Wikidata:Requests_for_deletions" target="_blank">request deletion there</a>. If you're in Wikidata but would prefer not to be visible only in this tool, you can also ping me to be added to a deny-list.
+      <p>
+        <B>But this person isn't a ... </b> This tool uses an inclusive search, so someone classified as an opinion journalist is also counted as a journalist, someone classified as a beekeper is counted an agricultural worker, and so on, depending on how Wikidata organizes its taxonomy. It includes both present and past occupations.
+      <p>
+        <b>Select a field to begin.</b> The number is the approximate number of accounts in that field as of a last batch analysis (December 21, 2022). Actual results may vary.
+      <p>
+        <select id="profession-select">
+          <option>Loading professions...</option>
+        </select>
+        <button id="lookup-button">Look up</button>
+        <span id="loading">Loading&hellip;</span>
+        <span id="error">There was a problem. Maybe Wikidata is having technical issues?</span>
+      <div id="download-link-container"></div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

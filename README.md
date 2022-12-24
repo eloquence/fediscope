@@ -1,2 +1,3 @@
 # fediscope
-Discover fediverse accounts using Wikidata
+
+Discover fediverse accounts using Wikidata.
