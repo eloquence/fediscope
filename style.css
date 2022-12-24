@@ -1,63 +1,65 @@
 body {
-  font-family:sans-serif;
+     font-family:sans-serif;
 }
-  #loading {
-      display:none;
-      font-style:italic;
-      color:#555;
-      font-size:small;
-  }
-  #error {
-      display:none;
-      color:red;
-  }
-  #results-table {
-    margin:1em;
-  }
-  #results-table tr {
-    vertical-align:top;
-  }
-  #results-table td {
-    padding:0.2em;
-  }
-  #results-table .name {
-    width:25%;
-  }
-  #results-table .description {
-    width:40%;
-  }
-  #results-table .account {
-    width:25%;
-  }
-  #results-table .picture {
-    width:10%;
-  }
-
-  #main {
-    margin-top:1.5em;
-    margin-left:1.2em;
-  }
-
-  #download-link-container {
-    margin-top:1em;
-  }
-  .remove-link {
-    text-decoration:none;
-    cursor:pointer;
-    color:#996666;
-  }
-  #intro {
-    font-size:1.1em;
-  }
-  .dark-mode {
-
-    background-color: black;
-    color: #eee;
-  }
-
-  .dark-mode a {
-      color:#eee;
-  }
-  .dark-mode a:visited {
-      color:#aaa;
-  }
+ #loading {
+     display:none;
+     font-style:italic;
+     color:#555;
+     font-size:small;
+}
+ #error {
+     display:none;
+     color:red;
+}
+ #results-table {
+     margin:1em;
+}
+ #results-table tr {
+     vertical-align:top;
+}
+ #results-table tr:hover {
+     background-color: #eee;
+}
+ #results-table td {
+     padding:0.5em;
+}
+ #results-table .name {
+     width:25%;
+}
+ #results-table .description {
+     width:40%;
+}
+ #results-table .account {
+     width:25%;
+}
+ #results-table .picture {
+     width:10%;
+}
+ #main {
+     margin-top:1.5em;
+     margin-left:1.2em;
+}
+ #download-link-container {
+     margin-top:1em;
+}
+ .remove-link {
+     text-decoration:none;
+     cursor:pointer;
+     color:#996666;
+}
+ #intro {
+     font-size:1.1em;
+}
+ .dark-mode {
+     background-color: black;
+     color: #eee;
+}
+ .dark-mode a {
+     color:#eee;
+}
+ .dark-mode a:visited {
+     color:#aaa;
+}
+ .dark-mode #results-table tr:hover {
+     background-color: #333;
+}

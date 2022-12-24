@@ -123,6 +123,9 @@ function displayResults(data) {
     // Create a table element
     const table = document.createElement("table");
     table.setAttribute("id", "results-table");
+    table.setAttribute("cellspacing", "0");
+    table.setAttribute("cellpadding", "0");
+
 
     const seenAddress = [];
     // Add a table row for each result binding
